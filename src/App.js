@@ -23,7 +23,7 @@ function App() {
             .then((res) => {
                 setComment(res.data);
             }).catch((err) => console.error(err));
-    }, [user, image, comment]);
+    }, [selectedData]);
     return (
         <div>
             <span className="text-primary border-bottom border-2 border-primary">Users</span>
